@@ -1,16 +1,68 @@
-# React + Vite
+# 🌐 Personal Portfolio — Shafayet Ananto  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website showcasing my work as a frontend developer.  
+The portfolio highlights who I am, how I work, the projects I build, and how you can reach me.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Quick Links  
+- **Live Portfolio:** https://shafayetananto.vercel.app/
+- **Email:** shafayetananto06@gmail.com  
+- **GitHub:** https://github.com/shafayetananto
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏠 Home  
+The homepage gives a brief introduction and a clean hero section that quickly communicates who I am and what I build.  
+Includes a direct call-to-action leading visitors to explore more of the website.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👤 About Me  
+This section explains my background, interests, and what drives me as a developer.  
+It highlights my focus on clean UI design, responsive layouts, and modern frontend technologies.
+
+---
+
+## 🔧 Workflow  
+A breakdown of how I approach building projects:
+
+
+- **Goal Mapping** – Understand goals, audience, and website purpose  
+- **Structure Blueprint** – Plan layout and flow for each section  
+- **Design Phase** – Create a clean, modern look with strong hierarchy  
+- **Development Phase** – Build smooth, responsive, scalable code  
+- **Refinement Stage** – Polish details and fix rough spots  
+- **Deployment & Support** – Launch confidently and provide ongoing help  
+
+---
+
+## 💼 Projects  
+A curated selection of my best work.  
+Each project includes its own live link, features, tech stack, and GitHub repository (shown inside the portfolio itself).
+
+---
+
+## ✉️ Contact  
+A simple section for reaching out directly.
+---
+
+## 🛠️ Tech Stack  
+**Frontend:**  
+- React  
+- React Router  
+- Tailwind CSS  
+- Custom UI components & animations  
+
+**Tools:**  
+- Git & GitHub  
+- VS Code  
+- Vercel (Deployment)
+- Web3Forms
+
+---
+
+## 📦 Installation (For Local Development)  
+```bash
+npm install
+npm run dev
