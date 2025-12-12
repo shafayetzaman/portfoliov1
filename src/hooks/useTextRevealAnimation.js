@@ -15,6 +15,8 @@ export function useTextRevealAnimation(options = {}) {
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -25,19 +27,34 @@ export function useTextRevealAnimation(options = {}) {
             });
 
             if (animationType === 'heading') {
-              gsap.from(split.chars, {
-                duration: 0.8,
-                opacity: 0,
-                scale: 0,
-                y: 100,
-                rotationX: 180,
-                transformOrigin: "0% 50% -50",
-                ease: "back.out",
-                stagger: {
-                  amount: 0.5,
-                  from: 'random'
-                }
-              });
+              if (isMobile) {
+                // Simplified mobile animation - less GPU-intensive
+                gsap.from(split.chars, {
+                  duration: 0.6,
+                  opacity: 0,
+                  y: 20,
+                  ease: "power2.out",
+                  stagger: {
+                    amount: 0.3,
+                    from: 'start'
+                  }
+                });
+              } else {
+                // Full desktop animation
+                gsap.from(split.chars, {
+                  duration: 0.8,
+                  opacity: 0,
+                  scale: 0,
+                  y: 100,
+                  rotationX: 180,
+                  transformOrigin: "0% 50% -50",
+                  ease: "back.out",
+                  stagger: {
+                    amount: 0.5,
+                    from: 'random'
+                  }
+                });
+              }
             }
             else if (animationType === 'paragraph') {
               gsap.from(split.chars, {
